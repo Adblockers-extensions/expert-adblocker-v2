@@ -144,6 +144,7 @@ const Loader = ({ blockedCount }) => {
     <>
       <div className="expert-adblocker-popoup__container">
         <h2>EXPERT</h2>
+        <span className="curved">h</span>
         <div className="top">
           <div className="logo">
             <div className="logo-container">
@@ -207,7 +208,7 @@ const Loader = ({ blockedCount }) => {
             <div className="toggle-switch">
               <button
                 onClick={isActiveYoutube ? offAdBlocker : onAdBlocker}
-                className="connected-btn"
+                className={`${isActiveYoutube?'off':'on'} connected-btn`}
               >
                 {isActiveYoutube ? <span>OFF</span> : <span>ON</span>}
               </button>
