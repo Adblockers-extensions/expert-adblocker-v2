@@ -80,6 +80,10 @@ chrome.runtime.onStartup.addListener(() => {
     {
       name: "Disney+Hotstar",
       count: 0
+    },
+    {
+      name: 'Twitch',
+      count: 0
     }
   ]
   chrome.storage.local.set({ AdsData: JSON.stringify(defaultCountData) }).then(() => {
