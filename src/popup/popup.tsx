@@ -100,7 +100,7 @@ const Loader = ({ blockedCount }) => {
       case "hotstar":
         setOnThisPage(blockedCount[10]?.count);
         break;
-      case "Twitch":
+      case "twitch":
         setOnThisPage(blockedCount[11]?.count);
         break;
     }
