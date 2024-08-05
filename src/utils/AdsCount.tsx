@@ -1,4 +1,5 @@
 export default async function adsCount(AdsPath: string, resultPromise: Promise<number>) {
+    console.log(AdsPath,resultPromise,"Result is here")
     try {
         const response = await resultPromise;
 
