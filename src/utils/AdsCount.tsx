@@ -47,6 +47,10 @@ export default async function adsCount(AdsPath: string, resultPromise: Promise<n
             {
                 name:"Disney+Hotstar",
                 count:0
+            },
+            {
+                name:'Twitch',
+                count:0
             }
         ];
 

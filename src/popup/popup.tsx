@@ -100,6 +100,9 @@ const Loader = ({ blockedCount }) => {
       case "hotstar":
         setOnThisPage(blockedCount[10]?.count);
         break;
+      case "Twitch":
+        setOnThisPage(blockedCount[11]?.count);
+        break;
     }
   }, [currentURL, blockedCount]);
 
@@ -208,7 +211,7 @@ const Loader = ({ blockedCount }) => {
             <div className="toggle-switch">
               <button
                 onClick={isActiveYoutube ? offAdBlocker : onAdBlocker}
-                className={`${isActiveYoutube?'off':'on'} connected-btn`}
+                className={`${isActiveYoutube ? 'off' : 'on'} connected-btn`}
               >
                 {isActiveYoutube ? <span>OFF</span> : <span>ON</span>}
               </button>
