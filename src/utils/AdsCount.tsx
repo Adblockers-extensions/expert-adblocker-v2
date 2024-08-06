@@ -1,4 +1,5 @@
 export default async function adsCount(AdsPath: string, resultPromise: Promise<number>) {
+    console.log(AdsPath,resultPromise,"Result is here")
     try {
         const response = await resultPromise;
 
@@ -46,11 +47,11 @@ export default async function adsCount(AdsPath: string, resultPromise: Promise<n
             },
             {
                 name:"Disney+Hotstar",
-                count:0
+                count: 0
             },
             {
                 name:'Twitch',
-                count:0
+                count: 0
             }
         ];
 
